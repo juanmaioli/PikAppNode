@@ -1,0 +1,32 @@
+<%- include("./partials/head.ejs") %>
+</head>
+<body class="body-background">
+  <main class="container-fluid">
+    <article class="row h-100">
+      <section class="col-md-4"></section>
+      <section class="col-md-4 abs-center">
+        <fieldset class="fieldset-login">
+          <div class="text-center">
+            <img class="img-fluid" src="../img/logoch.jpg" width="125px" alt="">
+          </div>
+          <form class="form-signin" ACTION="proc.php" name="form1" method="POST">
+            <div class="input-group mb-3 mt-3">
+              <span class="input-group-text bg-darkblue text-white"><i class="fa-regular fa-user fa-lg"></i></span>
+              <input name="cl_usuario" type="text" id="cl_usuario" class="form-control" placeholder="Usuario" required autofocus>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text bg-darkblue text-white"><i class="fa-regular fa-lock fa-lg"></i></span>
+              <input name="cl_clave" type="password" id="cl_clave" class="form-control" placeholder="Contrase&ntilde;a" required>
+              <span class="input-group-text"><a href='javascript:void(0);' onclick="passClear('cl_clave')"><i class="fa fa-eye-slash" id="eye"></i></a></span>
+            </div>
+            <div class="text-center">
+              <button class="btn btn-primary btn-block mt-3 mb-3" type="submit">Ingresar</button><br>
+              <a href='/recuperar' align='center'>Recuperar Clave</a>
+              </div>
+          </form>
+      </fieldset>
+      </section>
+      <section class="col-md-4"></section>
+    </article>
+  </main>
+  <%- include("./partials/footer.ejs") %>
