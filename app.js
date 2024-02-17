@@ -22,8 +22,8 @@ const con = mysql.createConnection({
   multipleStatements : true
 })
 
-con.connect(()=> console.log('conectado'))
-con.end(()=> console.log('desconectado'))
+// con.connect(()=> console.log('conectado'))
+// con.end(()=> console.log('desconectado'))
 
 
 const app = express()
